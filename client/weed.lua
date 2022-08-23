@@ -194,7 +194,7 @@ RegisterNetEvent('ps-drugprocessing:client:rollJoint', function()
 end)
 
 CreateThread(function()
-	local weedZone = CircleZone:Create(Config.CircleZones.WeedField.coords, 10.0, {
+	local weedZone = CircleZone:Create(Config.CircleZones.WeedField.coords, Config.CircleZones.WeedField.radius, {
 		name = "ps-weedzone",
 		debugPoly = false
 	})
